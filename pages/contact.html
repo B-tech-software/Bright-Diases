@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Us | Bright Daisies Preschool</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <style>
+    body {
+      background: linear-gradient(to bottom right, #000000, #0d3b66);
+      color: white;
+    }
+
+    .navbar {
+      background-color: #000000;
+    }
+
+    .navbar .nav-link {
+      color: #ffffff !important;
+    }
+
+    .form-control,
+    .form-control:focus {
+      background-color: #1a1a1a;
+      color: white;
+      border: 1px solid #0dcaf0;
+    }
+
+    iframe {
+      border: 0;
+      width: 100%;
+      height: 300px;
+    }
+
+    .contact-info i {
+      color: #0dcaf0;
+      margin-right: 10px;
+    }
+
+    footer {
+      margin-top: 60px;
+    }
+
+    /* WhatsApp floating button */
+    #whatsapp-chat {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      background-color: #25d366;
+      color: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 30px;
+      z-index: 1000;
+      transition: background-color 0.3s ease;
+    }
+    #whatsapp-chat:hover {
+      background-color: #1ebe57;
+      color: white;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand text-info fw-bold" href="#">Bright Daisies</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="programs.html">Programs</a></li>
+          <li class="nav-item"><a class="nav-link active text-info" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="text-center py-5" data-aos="fade-down">
+    <h1 class="text-info fw-bold">Contact Bright Daisies</h1>
+    <p>We'd love to hear from you or show you around!</p>
+  </header>
+
+  <!-- Contact Info & Form -->
+  <section class="container py-5">
+    <div class="row g-5">
+
+      <!-- Contact Info -->
+      <div class="col-md-5" data-aos="fade-right">
+        <h3 class="mb-4 text-info">Get in Touch</h3>
+        <p class="contact-info"><i class="fas fa-map-marker-alt"></i> Chitungwiza, near UFIC & Town Center</p>
+        <p class="contact-info"><i class="fas fa-phone"></i> +263 77 123 4567</p>
+        <p class="contact-info"><i class="fas fa-envelope"></i> info@brightdaisies.ac.zw</p>
+        <p class="contact-info"><i class="fas fa-clock"></i> Mon - Fri: 7:00 AM - 4:00 PM</p>
+        <div class="mt-4">
+          <a href="#" class="text-white fs-4 me-3"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="text-white fs-4 me-3"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="text-white fs-4"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="col-md-7" data-aos="fade-left">
+        <h3 class="mb-4 text-info">Send Us a Message</h3>
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">Your Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name" />
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Your Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email" />
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Your Message</label>
+            <textarea class="form-control" id="message" rows="5" placeholder="Write your message here..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-info px-4">Send Message</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Google Map -->
+    <div class="row mt-5" data-aos="fade-up">
+      <div class="col-12">
+        <h3 class="mb-3 text-info">Find Us on the Map</h3>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7971.433202207669!2d31.0950!3d-18.0055!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1efdb5d6e7f720a3%3A0x9e1388e810a19c2b!2sUFIC%20Chitungwiza!5e0!3m2!1sen!2szw!4v1686500000000!5m2!1sen!2szw"
+          allowfullscreen
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Bright Daisies Preschool Location"
+        ></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black text-white pt-5 pb-4">
+    <div class="container text-md-left">
+      <div class="row">
+        <div class="col-md-3">
+          <h5 class="text-info">Bright Daisies</h5>
+          <p>A fun, safe, and loving preschool in the heart of Chitungwiza.</p>
+        </div>
+        <div class="col-md-3">
+          <h5 class="text-info">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+            <li><a href="about.html" class="text-white text-decoration-none">About</a></li>
+            <li><a href="programs.html" class="text-white text-decoration-none">Programs</a></li>
+            <li><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5 class="text-info">Contact Info</h5>
+          <p><i class="fas fa-phone"></i> +263 77 123 4567</p>
+          <p><i class="fas fa-envelope"></i> info@brightdaisies.ac.zw</p>
+        </div>
+        <div class="col-md-3 text-center">
+          <h5 class="text-info">Follow Us</h5>
+          <a href="#" class="text-white me-3 fs-4"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="text-white me-3 fs-4"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="text-white fs-4"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <hr class="text-light" />
+      <p class="text-center mb-0">&copy; 2025 Bright Daisies Preschool. Built with ❤️ in Chitungwiza, Zimbabwe.</p>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Floating Button -->
+  <a
+    href="https://wa.me/263771234567"
+    target="_blank"
+    id="whatsapp-chat"
+    aria-label="Chat with us on WhatsApp"
+    title="Chat with us on WhatsApp"
+  >
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>

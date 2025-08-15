@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Programs - Bright Daisies Preschool</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <style>
+    body {
+      background: linear-gradient(to bottom, #000000, #0a0f2c);
+      color: white;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .section-title {
+      color: #00bfff;
+    }
+    .program-box {
+      background-color: rgba(255, 255, 255, 0.05);
+      border-radius: 16px;
+      padding: 20px;
+    }
+    .carousel-inner img {
+      height: 300px;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-black sticky-top">
+    <div class="container">
+      <a class="navbar-brand text-info fw-bold" href="#">Bright Daisies</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link active text-info" href="programs.html">Programs</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Programs Section -->
+  <section class="py-5">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <h2 class="section-title fw-bold">Our Fun & Educational Programs</h2>
+        <p>Bright Daisies offers exciting programs full of learning and laughter!</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Program 1 -->
+        <div class="col-md-6" data-aos="fade-right">
+          <div class="program-box">
+            <h4 class="text-info">Early Learners (Ages 2-3)</h4>
+            <p>Our youngest children are introduced to playful learning through storytelling, sensory play, and movement.</p>
+            <p>Activities include: puzzles, paint play, soft toys, music circles.</p>
+
+            <!-- Carousel -->
+            <div id="carouselEarly" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="assets/images/early1.jpg" class="d-block w-100" alt="Early learners">
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/images/early2.jpg" class="d-block w-100" alt="Sensory play">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselEarly" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselEarly" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Program 2 -->
+        <div class="col-md-6" data-aos="fade-left">
+          <div class="program-box">
+            <h4 class="text-info">Pre-K Explorers (Ages 4-5)</h4>
+            <p>Designed for curious young minds to explore language, math, and art through structured play and fun group activities.</p>
+            <p>Activities include: basic counting, story creation, group games, arts & crafts.</p>
+
+            <!-- Carousel -->
+            <div id="carouselPreK" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="assets/images/explorer1.jpg" class="d-block w-100" alt="Pre-K fun">
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/images/explorer2.jpg" class="d-block w-100" alt="Art time">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselPreK" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselPreK" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fun Play Section -->
+        <div class="col-12" data-aos="zoom-in">
+          <div class="program-box mt-4 text-center">
+            <h4 class="text-info">Awesome Play Area</h4>
+            <p>Kids enjoy exciting outdoor fun with <strong>jumping castles, slides, see-saws, and obstacle courses</strong> in a safe and secure environment. Perfect for building strength, confidence, and friendships!</p>
+            <img src="assets/images/playarea.jpg" class="img-fluid rounded mt-3" alt="Kids playing on jumping castles and seesaws">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black text-white pt-5 pb-4">
+    <div class="container text-md-left">
+      <div class="row">
+        <div class="col-md-3">
+          <h5 class="text-info">Bright Daisies</h5>
+          <p>Growing minds with love and laughter in Harare.</p>
+        </div>
+        <div class="col-md-2">
+          <h6 class="text-info">Explore</h6>
+          <p><a href="#" class="text-white text-decoration-none">Home</a></p>
+          <p><a href="#" class="text-white text-decoration-none">About</a></p>
+          <p><a href="#" class="text-white text-decoration-none">Programs</a></p>
+          <p><a href="#" class="text-white text-decoration-none">Contact</a></p>
+        </div>
+        <div class="col-md-4">
+          <h6 class="text-info">Contact</h6>
+          <p><i class="fas fa-map-marker-alt"></i> Harare, Zimbabwe</p>
+          <p><i class="fas fa-envelope"></i> info@brightdaisies.ac.zw</p>
+          <p><i class="fas fa-phone"></i> +263 77 123 4567</p>
+        </div>
+        <div class="col-md-3 text-center">
+          <h6 class="text-info">Follow Us</h6>
+          <a href="#" class="text-white me-3 fs-5"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="text-white me-3 fs-5"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="text-white me-3 fs-5"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+      <hr class="text-white" />
+      <div class="text-center">
+        <p>&copy; 2025 Bright Daisies Preschool. Built with ❤️ in Harare.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS + AOS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+</body>
+</html>
